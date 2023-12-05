@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <div class="container">
+        <header id="baner">
+            <h1>Formatowanie dokumentów HTML</h1>
+        </header>
+        <section id="paneleGorne">
+            <article id="gornyPierwszy">
+                <h2>Przykład listy - hobby</h2>
+                <ul>
+                    <li>muzyka</li>
+                    <li>turystyka
+                        <ol>
+                            <li>góry</li>
+                            <li>jeziora</li>
+                            <li>na rowerze</li>
+                        </ol>
+                    </li>
+                    <li>książki</li>
+                </ul>
+            </article>
+            <article id="gornyDrugi">
+                <h2>Przykład tabeli - rozkład dnia</h2>
+                <table>
+                    <tr>
+                        <th>Pora dnia</th>
+                        <th>obowiązki</th>
+                    </tr>
+                    <tr>
+                        <td>rano</td>
+                        <td>nauka</td>
+                    </tr>
+                    <tr>
+                        <td>południe</td>
+                        <td>zajęcia dodatkowe</td>
+                    </tr>
+                    <tr>
+                        <td>popołudnie</td>
+                        <td rowspan="2" >moje hobby</td>
+                    </tr>
+                    <tr>
+                        <td>wieczór</td>
+                        
+                    </tr>
+                </table>
+            </article>
+            <article id="gornyTrzeci">
+                <img src="napisy.png" alt="technologia web">
+            </article>
+        </section>
+        <main>
+            <p>Podaj rozmiar tekstu w procentach <input type="number">%</p>
+            <p><select name="textFormat" id="textFormat">
+                <option value="prosty">prosty</option>
+                <option value="kursywa">kursywa</option>
+            </select></p>
+            <p>Jakim kolorem sformatować tekst? Wybierz przcusik <br>
+            <button>&nbsp;</button>
+            <button>&nbsp;</button>
+            <button>&nbsp;</button>
+            </p>
+            <p>
+                To jest przykład paragrafu, który może być dowolnie formatowany przez Java Script
+            </p>
+        </main>
+        <footer>
+            <p>Formatowaniem teksty zajmował się: <i>123456789</i></p>
+            <a href="formatowanie.pl" target="_blank">Odwiedź także</a>
+        </footer>
+    </div>
+</body>
+</html>

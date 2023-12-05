@@ -1,0 +1,73 @@
+body{
+    font-family: Georgia;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(1fr,3);
+    grid-template-rows: repeat(1fr,4);
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "main main main"
+    "footer footer footer";
+}
+header{
+    grid-area: header;
+    background-color: #824555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#paneleGorne{
+    grid-area: section;
+    display: flex;
+}
+#gornyPierwszy,#gornyDrugi{
+    background-color: #A26475;
+    color: white;
+    width: 30%;
+    height: 300px;
+}
+#gornyPierwszy{
+    grid-area: gornyPierwszy;
+}
+#gornyDrugi{
+    grid-area: gornyDrugi;
+}
+#gornyTrzeci{
+background-color: #A26475;
+width: 40%;
+height: 300px;
+text-align: right;
+grid-area: gornyTrzeci;
+
+}
+main{
+    grid-area: main;
+    background-color: #F0EAE2;
+    padding: 50px;
+}
+footer{
+    grid-area: footer;
+    background-color: #824555;
+    text-align: center;
+    padding: 20px;
+}
+table,td,th{
+    color: white;
+    border: 2px solid #69293A;
+    padding: 7px;
+    border-collapse: collapse;
+}
+ul{
+    list-style: square;
+}
+button:nth-child(2){
+background-color: red;
+}
+button:nth-child(3){
+    background-color: green;
+}
+button:nth-child(4){
+    background-color: blue;
+}
